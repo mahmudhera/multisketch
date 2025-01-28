@@ -17,7 +17,7 @@ Average containment (multisketch): 0.01018914776141325
 Standard deviation from true (multisketch): 0.003312806708564233
 ```
 
-This is an example, that shows that the new estimator (here, we refer to this using "multisketch") has an overall standard deviation of 0.003313; whereas the traditional fracminhash containment estimator (referred to as "classic" here) has an overall standard deviation of 0.00318.
+This is an example, that shows that the new estimator (here, we refer to this using "multisketch") has an overall standard deviation of 0.003313; whereas the traditional fracminhash containment estimator (referred to as "classic" here) has an overall standard deviation of 0.003318.
 
 This makes me suspect that there may be some possibility that this estimator may be better.
 
