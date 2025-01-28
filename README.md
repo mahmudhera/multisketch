@@ -19,6 +19,19 @@ Standard deviation from true (multisketch): 0.003312806708564233
 
 This is an example, that shows that the new estimator (here, we refer to this using "multisketch") has an overall standard deviation of 0.003313; whereas the traditional fracminhash containment estimator (referred to as "classic" here) has an overall standard deviation of 0.003318.
 
-This makes me suspect that there may be some possibility that this estimator may be better.
 
-But, I am not certain (yet). And this is only just one single experiment.
+```
+python main.py --scale_factor 0.01 --n_iter 500 --size1 100000 --size2 200000 --num_multisketches 10 --seed 13
+True containment: 0.010080403216128644
+Average containment (classic): 0.010287412901062125
+Standard deviation from true (classic): 0.003132759016495775
+Average containment (multisketch): 0.010101835673413176
+Standard deviation from true (multisketch): 0.0031109431452193536
+```
+
+This is another instance (using a different seed) that shows that the std is smaller for this new estimator.
+
+
+These couple of experiments make me suspect that there may be some possibility that this estimator may be better.
+
+But, I am not certain (yet). And this is only just a couple of experiments.
